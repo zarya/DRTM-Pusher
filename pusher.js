@@ -6,6 +6,8 @@ var fs = require('fs');
 var DMRStore = {};
 var connect_counter = {};
 
+var config = require('./config.json');
+
 //
 //
 // socketio
@@ -46,8 +48,8 @@ io.listen(5000);
 
 var mqtt = require('mqtt');
 var client = mqtt.connect({
-  host: '172.18.203.238',
-  port: 1883,
+  host: config.mqtt_host, 
+  port: config.mqtt_port,
   reconnectPeriod: 1000
 });
 

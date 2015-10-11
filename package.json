@@ -1,0 +1,9 @@
+{ "name" : "DRTM-Pusher"
+, "version" : "1.0.0"
+, "dependencies" : { "ip" : ""
+, "net": ""
+, "fs": ""
+, "sys": ""
+, "socket.io": ""
+, "mqtt": ""} 
+}
